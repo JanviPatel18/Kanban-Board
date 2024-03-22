@@ -1,0 +1,100 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0a0000;
+}
+
+.kanban-board {
+  display: flex;
+  justify-content: center;
+  margin: 20px auto;
+  width: 900px;
+}
+
+.kanban-list {
+  flex: 1;
+  margin: 0 10px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  background-color: #1c1c1c;
+  border-color: #0a0000;
+}
+
+.kanban-list h2 {
+  font-size: 21px;
+  margin-bottom: 10px;
+  color: white;
+}
+
+.task-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  height: 100vh;
+overflow-y: auto; 
+scrollbar-color: #1c1c1c;
+}
+
+.task, h2 {
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: #2f2e2e;
+  display: flex;
+  flex-direction: column; 
+  justify-content: space-between;
+  color: #ddd;
+   
+}
+
+.task-name {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.task-details {
+  font-size: 14px;
+  color: #978d8d;
+}
+
+
+h2{
+  height: 40px;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 5px;
+  background-color: #f0ad4e;
+  font-size: 20px;
+}
+
+.task-list::-webkit-scrollbar {
+  width: 10px;
+}
+
+
+.task-list::-webkit-scrollbar-track {
+background: #1c1c1c;
+}
+
+.task-list::-webkit-scrollbar-thumb {
+  background: #1c1c1c;
+}
+
+
+
+.task.dragging {
+  border: 2px solid #f0ad4e;
+}
+
+
+.placeholder {
+  height: 100px; /* Adjust height as needed */
+  background-color: #2f2e2e; /* Example background color */
+  margin-bottom: 10px;
+}
